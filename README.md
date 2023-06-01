@@ -3,9 +3,9 @@ A living record of information of different data sets on the Tufts cluster
 
 # MicroBooNE data sets
 
-## MicroBooNE Run 3 simulation data sets
+# MicroBooNE Run 3 simulation data sets
 
-### mcc9_v13_bnb_nu_corsika
+## mcc9_v13_bnb_nu_corsika
 
 * location: `/cluster/tufts/wongjiradlab/larbys/data/mcc9/mcc9_v13_bnb_nu_corsika/`
 * size: 158 GB
@@ -43,7 +43,7 @@ Example entry:
 }
 ```
 
-### mcc9_v13_bnb_nue_corsika
+## mcc9_v13_bnb_nue_corsika
 
 * location: `/cluster/tufts/wongjiradlab/larbys/data/db/mcc9_v13_bnbnue_corsika`
 * size: 537 GB
@@ -58,10 +58,71 @@ Useful metadata
 
 See description of metadata for `mcc9_v13_bnb_nu_corsika`. The above file for nue events contains similar info.
 
+## mcc9_v29_dl_run3b_bnb_nu_overlay_nocrtremerge
 
-## ML Datasets
+* location: `/cluster/tufts/wongjiradlab/larbys/data/mcc9/mcc9_v29e_dl_run3b_bnb_nu_overlay_nocrtremerge`
+* size: 3.8 TB, 15519 files
+* produced by: Fermilab production group. Output of DL analysis chain for 2020 LEE result
+* short description: simulated BNB neutrino interactions overlaid real data off-beam events for cosmic backgrounds
 
-## Analysis Datasets
+This data is considered the official MC data set for Run 3 MicroBooNE analyses.
+
+Useful metadata
+
+The file:
+
+`/cluster/tufts/wongjiradlab/larbys/data/mcc9/mcc9_v29e_dl_run3b_bnb_nu_overlay_nocrtremerge/goodlist.txt`
+
+is a list of file paths to files considered "good". Files might be "bad" due to failure in generating a proper `_recoTree` ROOT tree.
+This was the output of the DL reconstruction chain. Usually involved some error in the tracker algorithm.
+
+The file:
+
+`/cluster/tufts/wongjiradlab/larbys/data/mcc9/mcc9_v29e_dl_run3b_bnb_nu_overlay_nocrtremerge/prodgenie_bnb_overlay_run3b_ssnet_wc_v2_nocrtremerge_run3b_ssnet_merged_dlreco.json`
+
+contains information stripped out of the SAM data base about each of the files in the sample. Example output:
+
+```
+{
+"update_user": "uboonepro", 
+"file_type": "overlay", 
+"file_name": "merged_dlreco_600e27bd-368a-4d75-b38a-ff4a8ecc7981.root", 
+"fcl.version": "v08_00_00_29e_dl", 
+"first_event": 621, 
+"mc.pot": 2555460000000000.0, 
+"file_size": 5823180, 
+"ub_project.name": "prodgenie_bnb_overlay_run3b_ssnet_wc_v2_nocrtremerge", 
+"update_date": "2020-04-22T07:08:51+00:00", 
+"group": "uboone", 
+"file_format": "root", 
+"application": {"version": "v08_00_00_29e_dl", "name": "dlmetadata", "family": "art"}, 
+"parents": [{"file_name": "PhysicsRun-2018_3_7_16_10_19-0015388-00012_20180816T192920_ext_unbiased_2_gen_20190525T114159_g4_detsim_mix_r1a_r1b_postdlmctruth_r1c_postwcct_postdlmc_20200130T202918_overlayWCP.root", "file_id": 959643908}], 
+"ub_project.version": "prod_v08_00_00_29e_dl", 
+"start_time": "2020-04-22T06:45:36+00:00", 
+"ub_project.stage": "run3b_ssnet", 
+"fcl.name":"wirecell_detsim_optical_overlay_uboone_dlrerun.fcl/standard_overlay_notpc_uboone_dlrerun.fcl/reco_uboone_mcc9_8_driver_overlay_optical_dlrerun.fcl/run_eventweight_microboone_justSplines.fcl/dlreco2.fcl/mcc9_dlreco_w_wirecell_driver_overlay_and_mc.fcl/standard_dlreco_uboone_metadata.fcl", 
+"file_id": 1180932607, 
+"data_tier": "merged_dlreco", 
+"runs": [[15388, 12, "physics"]], 
+"last_event": 621, 
+"checksum": ["enstore:2786692065", "adler32:861c8be2"], 
+"event_count": 1, 
+"content_status": "good", 
+"create_date": "2020-04-22T06:48:22+00:00", 
+"end_time": "2020-04-22T06:45:36+00:00", 
+"full_path": "/pnfs/uboone/overlay/uboone/merged_dlreco/prod_v08_00_00_29e_dl/prodgenie_bnb_overlay_run3b_ssnet_wc_v2_nocrtremerge/run3b_ssnet/00/01/53/88/merged_dlreco_600e27bd-368a-4d75-b38a-ff4a8ecc7981.root", 
+"user": "uboonepro"
+}
+```
+
+
+
+
+
+
+# ML Datasets
+
+# Analysis Datasets
 
 
 
