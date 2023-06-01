@@ -1,9 +1,9 @@
 # tufts_cluster_datasets
 A living record of information of different data sets on the Tufts cluster
 
-## MicroBooNE data sets
+# MicroBooNE data sets
 
-### Run 3 data sets
+## MicroBooNE Run 3 simulation data sets
 
 ### mcc9_v13_bnb_nu_corsika
 
