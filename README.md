@@ -115,8 +115,18 @@ contains information stripped out of the SAM data base about each of the files i
 }
 ```
 
+# MicroBooNE e+/e- data sets
 
+This data set was creted to help develop e+/e- selections and to probably to serve as a benchmark model for evaluating sensitivities.
 
+* location: `/cluster/tufts/wongjiradlabnu/nutufts/data/v2_me_05/epem_DarkNu_BenchmarkD/merged_dlreco/`
+* size: X
+* produced by: Fermilab production group. larcv/larlite run by Matt R. 'dlgen2' processed as well.
+
+Data Schema:
+* `merged_dlreco`: contains the usual larcv and larlite ROOT Trees and classes
+* `dlgen2`: info needed here
+* `ana`: eventual analysis files
 
 
 
